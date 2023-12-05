@@ -45,14 +45,14 @@ GET http://localhost:8000/api/v1/carts/1
 DELETE  http://localhost:8000/api/v1/carts/656f2009d7043b1342ba28fa
 ###
 
-PUT   http://localhost:8000/api/v1/carts/656f2009d7043b1342ba28fa
+patch   http://localhost:8000/api/v1/carts/656f2009d7043b1342ba28fa
 Content-Type: application/json
 
 {   
    "name": "Nike Vaporfly 4% Flyknit"
 }
 ###
-PUT   http://localhost:8000/api/v1/carts/addProducts/1
+patch   http://localhost:8000/api/v1/carts/addProducts/1
 Content-Type: application/json
 
 {   
@@ -66,20 +66,11 @@ Content-Type: application/json
 }
 
 ###
-PUT   http://localhost:8000/api/v1/carts/removeProducts/1/656f1f9b44d094b201c75e12
-Content-Type: application/json
+patch   http://localhost:8000/api/v1/carts/removeProducts/1/656f1f9b44d094b201c75e11
 
-{   
-   "_id": "656f1f9b44d094b201c75e12",
-  "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png",
-  "name": "Nike Air Zoom Pegasus 36",
-  "description": "The iconic Nike Air Zoom Pegasus 36 offers more cooling and mesh that targets breathability across high-heat areas. A slimmer heel collar and tongue reduce bulk, while exposed cables give you a snug fit at higher speeds.",
-  "price": 108.97,
-  "color": "#e1e7ed"
-}
 
 ###
-PUT   http://localhost:8000/api/v1/carts/editProducts/1
+patch   http://localhost:8000/api/v1/carts/editProducts/1
 Content-Type: application/json
 
 {   

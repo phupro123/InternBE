@@ -12,12 +12,12 @@ router.get('/:id',CartController.getOne);
 router.delete("/:id",CartController.delete);
 
 
-router.put("/:id",CartController.editCart);
+router.patch("/:id",CartController.editCart);
 
-router.put("/addProducts/:id",CartController.addProducts);
+router.patch("/addProducts/:id",CartController.addProducts);
 
-router.put("/removeProducts/:id/:pid",CartController.removeProducts);
+router.patch("/removeProducts/:id/:pid",CartController.removeProducts);
 
-router.put("/editProducts/:id",CartController.editProducts);
+router.patch("/editProducts/:id",CartController.editProducts);
 
 module.exports =router;
