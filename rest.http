@@ -42,15 +42,6 @@ GET http://localhost:8000/api/v1/carts
 GET http://localhost:8000/api/v1/carts/1
 ###
 
-DELETE  http://localhost:8000/api/v1/carts/656f2009d7043b1342ba28fa
-###
-
-patch   http://localhost:8000/api/v1/carts/656f2009d7043b1342ba28fa
-Content-Type: application/json
-
-{   
-   "name": "Nike Vaporfly 4% Flyknit"
-}
 ###
 patch   http://localhost:8000/api/v1/carts/addProducts/1
 Content-Type: application/json
