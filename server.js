@@ -11,7 +11,7 @@ const db = require('./helpers/connection_mongodb')
 db.connect()
 
 app.use(cors({
-    origin: ["http://localhost:3000","http://127.0.0.1:3000","https://intern-fe-82fk.vercel.app/"],
+    origin: ["http://localhost:3000","http://127.0.0.1:3000","https://intern-fe-82fk.vercel.app"],
     methods: "GET,POST,PUT,PATCH,DELETE",
     credentials: true,
   }));
